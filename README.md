@@ -7,6 +7,7 @@ This EFI can make Asus R414 run MacOS 10.15.4
 1、HD620  
 2、Power management(but does not include sleep wake up, so please turn off hibernation and keep the habit of opening and closing the C side)  
 3、Sound card(but please set the output to left or right in the settings)
+4、This also can work on MacOS 10.15.7,but you need to set Clover-acpi-drop_table and check item BGRT  when you install it 
 
 #Thanks 
 This is improved on the basis of   
