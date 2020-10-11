@@ -7,7 +7,7 @@ This EFI can make Asus R414 run MacOS 10.15.7
 # What Can‘t Work
 1、HD620,it only has 1536MB   
 2、Power management，after sleep it can't wake up, so please turn off hibernation and keep the habit of opening and closing the C side    
-3、Sound card,it only work on the headset，the speaker can not work because when the system start,the CLOVER  will automatically add a few more parameters, including Layout ID, and it will be automatically generated again after modification，you can find them on CLOVER-OPTIONS-Args)
+3、Sound card,it only work on the headset，the speaker can not work because when the system start,the CLOVER  will automatically add a few more parameters, including Layout ID, and it will be automatically generated again after modification，you can find them on CLOVER-OPTIONS-Args,the file have make right layout-id,so if you solve this,it will work normally.  
 
 # Notice
 
