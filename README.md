@@ -6,7 +6,7 @@
 2、将本项目的EFI文件夹替换U盘的EFI，包括EFI和BOOT文件夹   
 
 # 哪些不能正常
-1、HD620集成显卡，仅显示1536MB显存   
+1、~~HD620集成显卡，仅显示1536MB显存~~。已经修复，正常显示20148MB，工作性能正常  
 2、电源管理的休眠功能不能正常唤醒，请在系统偏好设置中关闭休眠，养成开合C面的习惯以节省电量  
 3、声卡，需要注意的是，安装完成后，系统nvram中会自动多出几个引导参数（可能与镜像有关），这会覆盖Clover的引导参数，刚好其中包含了layout-id=7，这不是正确的仿冒ID。这会导致耳机能正常工作而扬声器不能正常工作。如果想解决这个问题，使用终端命令sudo nvram boot-arvg=""清空引导参数重启即可。下次启动时，系统会应用Clover中的layout-id=21，尽管它能使扬声器和耳机同时工作，但也并不是完美的，在使用耳机时需要在系统偏好设置-声音中将声道调整为左声道或者右声道，否则声音会有异常，幸运的是，你只需要设置一次即可，而且不会影响到扬声器的声效。     
 4、触摸板在安装系统后不能立即工作，可能在重启几次后才能正常工作，具体原因未知。但千万不要千万不要千万不要为此去使用Hackitool等工具去重建驱动缓存，这会导致系统无限重启而要重新安装系统   
@@ -27,7 +27,7 @@ This EFI can make Asus R414 run MacOS 10.15.7
 2、This EFI use with Clover R5112，so if you want to make sure that it work normally，please also replace the Boot file and the CLOVER.efi when you replace the file
 
 # What Can‘t Work
-1、HD620,it only has 1536MB   
+1、~~HD620,it only has 1536MB~~
 2、Power management，after sleep it can't wake up, so please turn off hibernation and keep the habit of opening and closing the C side    
 3、Sound card,it only work on the headset，the speaker can not work because when the system start,the CLOVER  will automatically add a few more parameters, including Layout ID, and it will be automatically generated again after modification，you can find them on CLOVER-OPTIONS-Args.If your want to slove it
 
